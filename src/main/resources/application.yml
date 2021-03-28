@@ -1,3 +1,11 @@
 file:
   storage:
     location: fileStorage # caminho sem /
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 5MB
+      max-file-size: 5MB
+      max-request-size: 20MB
